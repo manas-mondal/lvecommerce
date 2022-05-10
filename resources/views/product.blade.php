@@ -33,5 +33,19 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="trending-wrapper">
+  <h1 style="text-align: center; padding-top: 20px; padding-bottom: 20px;">Trending Products</h1>
+  <div class=" ">
+    @foreach($products as $item)
+    <div class="trending-item">
+      <img class="trending-img" src="{{$item->gallery}}">
+      <div class="">
+        <h3>{{$item->name}}</h3>
+        
+      </div>
+    </div>
+    @endforeach
+  </div>
+</div>
 </div>
 @endsection
