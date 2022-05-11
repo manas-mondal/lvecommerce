@@ -33,8 +33,8 @@ class ProductController extends Controller
             return redirect('/login');
           }
       }
-      public static function cartItem(){
-            $userId=Session::get('user')->id;
-            return Cart::where('user_id',$userId)->count();
-          }
+     static  function cartItem(){
+       echo $userId=Session::get('user')->id;
+        return Cart::where('user_id',$userId)->count();
+      }
 }
